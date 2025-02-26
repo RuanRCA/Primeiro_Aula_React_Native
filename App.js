@@ -5,7 +5,7 @@ import {View ,Text , Image , Button} from "react-native";
 class App extends Component{
   constructor(props){
   super(props);
-  this.state = {titulo: 'Oleotek' , imagem:'https://static.vecteezy.com/system/resources/previews/002/124/399/original/breaking-news-background-tv-channel-news-screensaver-illustration-free-vector.jpg', texto: 'Notícias'}
+  this.state = {titulo: 'Oleotek' , imagem:'https://png.pngtree.com/png-vector/20230625/ourmid/pngtree-breaking-news-label-vector-png-image_7316922.png', texto: 'Notícias'}
   this.publicar = this.publicar.bind(this);
   }
   publicar(titulo,imagem,texto){
@@ -32,7 +32,7 @@ class Informacao extends Component{
   render(){
   return(
     <View>
-     <Text style={{fonSize:25 , color: 'Yellow' , textAlign:'center'}}>{this.props.titulo}</Text>
+     <Text style={{fontSize:18, color: '#F2AF00' , fontWeight:"bold", textAlign:'center'}}>{this.props.titulo}</Text>
      <Image source ={{uri:this.props.imagem}} style={{width:300 , height:300}}></Image>
      <Text> {this.props.texto}</Text>  
     </View>
