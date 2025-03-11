@@ -5,7 +5,7 @@ import {View ,Text , Image , Button} from "react-native";
 class App extends Component{
   constructor(props){
   super(props);
-  this.state = {titulo: 'Oleotek' , imagem:'https://png.pngtree.com/png-vector/20230625/ourmid/pngtree-breaking-news-label-vector-png-image_7316922.png', texto: 'Notícias'}
+  this.state = {titulo: '' , imagem:'https://png.pngtree.com/png-vector/20230625/ourmid/pngtree-breaking-news-label-vector-png-image_7316922.png', texto: 'Notícias'}
   this.publicar = this.publicar.bind(this);
   }
   publicar(titulo,imagem,texto){
@@ -13,7 +13,7 @@ class App extends Component{
   }
   render(){
     return(
-      <View style={{padding:50}}>
+      <View style={{padding:35}}>
         <Informacao titulo={this.state.titulo} imagem= {this.state.imagem} texto={this.state.texto}></Informacao>
 
         <Button title='Noticia 1' onPress={() => this.publicar( 'Óleo de cozinha usado: saiba como descartar de forma correta' ,'https://s2-g1.glbimg.com/k6LEpOuA67bCnU057jMy--WWfmg=/0x0:1200x800/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/A/t/2kNa8yQSaCzVIBvhzWxg/oleo-de-cozinha-1-.jpg' , 'Um litro de óleo despejado nos rios polui até um milhão de litros de água.O óleo contamina o solo e o lençol freático e também o impermeabiliza, causando enchentes .O óleo contamina o solo e o lençol freático e também o impermeabiliza, causando enchentes .Na água, forma uma película superficial, altera o PH e diminui o oxigênio, provocando a morte de plantas e animais aquáticos.Desequilíbrio da quantidade de nutrientes, gerando a proliferação excessiva de algas e a eutrofização do ambiente.No solo, causa a impermeabilização das raízes das plantas, impedindo a absorção de nutrientes.')}></Button>
