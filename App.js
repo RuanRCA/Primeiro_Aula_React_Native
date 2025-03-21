@@ -43,18 +43,16 @@ import {View ,Text , Image , Button , StyleSheet, ScrollView} from "react-native
 
 
 
-
 class App extends Component{
 
   render(){
     return(
+     
             <View style={estilos.area}>
 
-             
-              <Image style = {estilos.logo} source={require('./Imagem4.png')}>
-              </Image>
-      
-       
+<Image style = {estilos.logo} source={require('./Imagem4.png')}>
+</Image>
+ 
 
                <ScrollView>
                     
@@ -107,20 +105,38 @@ class App extends Component{
 
 
 
+
+
 const estilos = StyleSheet.create({
   area: {
     flex: 1,
-    marginTop: 50,
+    //marginTop: 50,
     backgroundColor: '#DAA520',
     padding: 50,
     flexDirection: 'column',
-   alignItems:'flex-start',
+    alignItems:'flex-start',
    
+
+  },
+
+  titulo:{
+   textAlign:'center',
 
   },
   logo:{
     width: 250,
      height:250,
+   
+   
+  },
+
+  titulologo:{
+   alignItems: 'flex-start'
+  },
+
+  textologo:{
+   alignItems:'flex-end',
+   backgroundColor: 'white'
   },
 
   titulo1:{
@@ -129,8 +145,52 @@ const estilos = StyleSheet.create({
   },
   imagem1:{
     with:250,
-    height:250
+    height:250,
+    borderRadius: 10
+  },
+
+  texto1:{
+   padding: 10,
+  },
+
+  titulo2:{
+    fontSize: 29,
+    color: 'black'
+  },
+
+  imagem2:{
+    with:250,
+    height:250,
+    borderRadius: 10
+  },
+
+  texto2:{
+    padding: 10,
+   
+   
+  },
+
+  titulo3:{
+    fontSize: 29,
+    color: 'black'
+  },
+
+  imagem3:{
+    with:250,
+    height:250,
+    borderRadius: 10
+  },
+
+  texto3:{
+    padding: 10,
+    
   }
+
+
+
+
+
+
 
 
 
